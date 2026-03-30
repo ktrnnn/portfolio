@@ -95,7 +95,7 @@ window.addEventListener('scroll', () => {
 // <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 const EMAILJS_PUBLIC_KEY   = 'gVkkxNPI6akGp7Mft';   // Your public key
 const EMAILJS_SERVICE_ID   = 'service_ypdsiso';      // Your service ID
-const EMAILJS_TEMPLATE_ID  = 'template_XXXXX';      // Replace with your actual template ID
+const EMAILJS_TEMPLATE_ID  = 'template_i4w9tc4';      // Replace with your actual template ID
 
 // Initialize EmailJS
 if (typeof emailjs !== 'undefined') {
