@@ -91,12 +91,18 @@ window.addEventListener('scroll', () => {
 });
 
 // ── EMAILJS SETUP ──
-// Replace these 3 values after you sign up at emailjs.com
-const EMAILJS_PUBLIC_KEY   = 'gVkkxNPI6akGp7Mft';     // e.g. 'abc123XYZ'
-const EMAILJS_SERVICE_ID   = 'service_ypdsiso';     // e.g. 'service_xxxxxxx'
-const EMAILJS_TEMPLATE_ID  = 'YOUR_TEMPLATE_ID';   // e.g. 'template_xxxxxxx'
+// Make sure you have included in your HTML:
+// <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+const EMAILJS_PUBLIC_KEY   = 'gVkkxNPI6akGp7Mft';   // Your public key
+const EMAILJS_SERVICE_ID   = 'service_ypdsiso';      // Your service ID
+const EMAILJS_TEMPLATE_ID  = 'template_XXXXX';      // Replace with your actual template ID
 
-emailjs.init(EMAILJS_PUBLIC_KEY);
+// Initialize EmailJS
+if (typeof emailjs !== 'undefined') {
+  emailjs.init(EMAILJS_PUBLIC_KEY);
+} else {
+  console.error('EmailJS SDK not loaded. Make sure <script src="https://cdn.emailjs.com/dist/email.min.js"></script> is included.');
+}
 
 // ── CONTACT FORM (EmailJS) ──
 const contactForm = document.getElementById('contactForm');
@@ -114,9 +120,8 @@ if (contactForm) {
     const templateParams = {
       name:    contactForm.querySelector('[name="name"]').value,
       email:   contactForm.querySelector('[name="email"]').value,
-      subject:      contactForm.querySelector('[name="subject"]').value,
-      message:      contactForm.querySelector('[name="message"]').value,
-
+      subject: contactForm.querySelector('[name="subject"]').value,
+      message: contactForm.querySelector('[name="message"]').value,
     };
 
     try {
