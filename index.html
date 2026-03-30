@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Katrine V. Dela Cruz – General Virtual Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">KDC<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" onclick="closeMobile()">Home</a></li>
+      <li><a href="#about" onclick="closeMobile()">About</a></li>
+      <li><a href="#skills" onclick="closeMobile()">Skills</a></li>
+      <li><a href="#services" onclick="closeMobile()">Services</a></li>
+      <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg-text">VA</div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">General Virtual Assistant</p>
+      <h1 class="hero-name reveal">Katrine<br/><em>Dela Cruz</em></h1>
+      <p class="hero-desc reveal">Tech-savvy, fast-learning, and passionate about helping businesses grow — from web creation to admin tasks, I've got you covered.</p>
+      <div class="hero-cta reveal">
+        <a href="#contact" class="btn-primary">Hire Me</a>
+        <a href="#services" class="btn-ghost">See Services</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-tags">
+      <span>WordPress</span>
+      <span>Notion</span>
+      <span>Canva</span>
+      <span>Shopify</span>
+      <span>HTML/CSS</span>
+      <span>CapCut</span>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-label">Who I Am</div>
+      <div class="about-grid">
+        <div class="about-image-wrap reveal">
+          <div class="about-image-frame">
+            <div class="about-placeholder">
+              <i class="fas fa-user"></i>
+              <p>Your Photo Here</p>
+            </div>
+          </div>
+          <div class="about-badge">
+            <span class="badge-number">3rd</span>
+            <span class="badge-text">Year BSIT<br/>Student</span>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <h2 class="section-title">Passionate. <em>Driven.</em><br/>Ready to Deliver.</h2>
+          <p>Hi! I'm <strong>Katrine</strong>, a 3rd-year BSIT student at <strong>Our Lady of the Pillar College Cauayan</strong> and currently serving as a <strong>Departmental Secretary</strong>. I bring organization, reliability, and a love for technology into everything I do.</p>
+          <p>While I may be new to the VA world, my digital skills are anything but basic. From building websites with HTML, CSS, and JavaScript to designing with Photoshop and managing projects in ClickUp and Notion — I come ready to work.</p>
+          <p>I believe in one thing: <em>if I don't know it yet, I'll learn it fast.</em></p>
+          <div class="about-info">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Cauayan City, Isabela, PH</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span>delacruzkatrine0310@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <i class="fab fa-whatsapp"></i>
+              <span>+63 966 319 3081 (WhatsApp & TG)</span>
+            </div>
+          </div>
+          <a href="Katrine_Dela_Cruz_VA_Resume.docx" class="btn-primary" download>Download Resume</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <div class="section-label">What I Know</div>
+      <h2 class="section-title text-center reveal">My Skill <em>Arsenal</em></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <h3>Web Development</h3>
+          <div class="skill-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>Python</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon"><i class="fas fa-store"></i></div>
+          <h3>Website Builders</h3>
+          <div class="skill-tags">
+            <span>WordPress</span><span>Wix</span><span>Shopify</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+          <h3>Design & Creative</h3>
+          <div class="skill-tags">
+            <span>Figma</span><span>Photoshop</span><span>Canva</span><span>CapCut</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon"><i class="fas fa-tasks"></i></div>
+          <h3>Project Management</h3>
+          <div class="skill-tags">
+            <span>Notion</span><span>ClickUp</span><span>Asana</span><span>Trello</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon"><i class="fab fa-google"></i></div>
+          <h3>Google Workspace</h3>
+          <div class="skill-tags">
+            <span>Docs</span><span>Sheets</span><span>Drive</span><span>Gmail</span><span>Calendar</span><span>Meet</span>
+          </div>
+        </div>
+
+        <div class="skill-card reveal">
+          <div class="skill-icon"><i class="fas fa-user-tie"></i></div>
+          <h3>Admin & Secretary</h3>
+          <div class="skill-tags">
+            <span>Scheduling</span><span>Minutes</span><span>Filing</span><span>Coordination</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-label">What I Offer</div>
+      <h2 class="section-title text-center reveal">Services I <em>Provide</em></h2>
+      <div class="services-grid">
+
+        <div class="service-card reveal">
+          <div class="service-number">01</div>
+          <h3>Administrative Support</h3>
+          <p>Email management, scheduling, data entry, meeting minutes, document preparation, and inbox organization.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-number">02</div>
+          <h3>Web Creation & Maintenance</h3>
+          <p>Build and manage websites using WordPress, Wix, Shopify, or custom HTML/CSS/JS — tailored to your brand.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-number">03</div>
+          <h3>Social Media & Design</h3>
+          <p>Create stunning graphics, reels, and content using Canva, Photoshop, and CapCut for your brand.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-number">04</div>
+          <h3>Project Coordination</h3>
+          <p>Organize your workflows, track tasks, and manage projects in Notion, ClickUp, Asana, or Trello.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-number">05</div>
+          <h3>Research & Reporting</h3>
+          <p>In-depth research, data organization, and reports delivered clean and ready to use via Google Docs/Sheets.</p>
+        </div>
+
+        <div class="service-card reveal">
+          <div class="service-number">06</div>
+          <h3>Tech & Automation Setup</h3>
+          <p>Leverage Python or PHP to automate tasks, set up forms, and streamline your business processes.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title text-center reveal">Let's Work <em>Together</em></h2>
+      <p class="contact-sub reveal">Available for remote full-time, part-time, and project-based opportunities.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h3>Reach me directly</h3>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>Email</strong>
+              <p>delacruzkatrine0310@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+              <strong>WhatsApp & Telegram</strong>
+              <p>+63 966 319 3081</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>Location</strong>
+              <p>Cauayan City, Isabela, Philippines</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <strong>Availability</strong>
+              <p>Open to opportunities now</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" name="name" placeholder="John Smith" required />
+            </div>
+            <div class="form-group">
+              <label>Your Email</label>
+              <input type="email" name="email" placeholder="john@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" name="subject" placeholder="I'd like to hire you for..." required />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea name="message" rows="5" placeholder="Tell me about your project or what you need help with..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <div id="formMsg" class="form-message"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-logo">KDC<span>.</span></div>
+        <p>Tech-savvy. Reliable. Ready to grow with you.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Katrine V. Dela Cruz. All rights reserved.</p>
+        <p>Built with HTML, CSS, JS & PHP</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
